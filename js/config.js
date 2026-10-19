@@ -205,7 +205,7 @@ const siteData = {
     phone: "09012844665",
     phoneIntl: "+989012844665",
     socials: [
-      { label: "Telegram", href: "https://t.me/Samavatian_Tech" },
+      { label: "Telegram", href: "https://t.me/Samavatian_official" },
       { label: "Instagram", href: "https://www.instagram.com/_samavatian/" },
       { label: "WhatsApp", href: "https://wa.me/989012844665" },
     ],
