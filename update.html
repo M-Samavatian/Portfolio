@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>در حال به‌روزرسانی</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Vazirmatn", sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+        overflow: hidden;
+        color: #fff;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        background: #3b82f6;
+        border-radius: 50%;
+        filter: blur(160px);
+        top: -150px;
+        right: -120px;
+        opacity: 0.5;
+      }
+
+      body::after {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: #06b6d4;
+        border-radius: 50%;
+        filter: blur(160px);
+        bottom: -150px;
+        left: -120px;
+        opacity: 0.45;
+      }
+
+      .card {
+        position: relative;
+        z-index: 1;
+        width: min(90%, 650px);
+        padding: 60px 40px;
+        text-align: center;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        animation: float 4s ease-in-out infinite;
+      }
+
+      .icon {
+        font-size: 70px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.3rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.05rem;
+        color: #d6dce5;
+        line-height: 2;
+      }
+
+      .loader {
+        margin: 35px auto 0;
+        width: 180px;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .loader span {
+        display: block;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(90deg, #38bdf8, #60a5fa, #ffffff);
+        border-radius: 30px;
+        animation: loading 1.6s infinite ease-in-out;
+      }
+
+      @keyframes loading {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(350%);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+        }
+
+        .card {
+          padding: 45px 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="icon">🛠️</div>
+
+      <h1>وب‌سایت در حال به‌روزرسانی است</h1>
+
+      <p>
+        برای ارائه خدمات بهتر، در حال انجام به‌روزرسانی و بهینه‌سازی هستیم.
+        به‌زودی دوباره در کنار شما خواهیم بود.
+      </p>
+
+      <div class="loader">
+        <span></span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه در دسترس نیست</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Vazirmatn", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #111827, #1f2937, #374151);
+        overflow: hidden;
+        color: #fff;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        filter: blur(140px);
+        opacity: 0.4;
+      }
+
+      body::before {
+        background: #ef4444;
+        top: -120px;
+        right: -100px;
+      }
+
+      body::after {
+        background: #3b82f6;
+        bottom: -120px;
+        left: -100px;
+      }
+
+      .card {
+        position: relative;
+        z-index: 1;
+        width: min(90%, 650px);
+        padding: 55px 40px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 24px;
+        backdrop-filter: blur(16px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      }
+
+      .icon {
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 42px;
+        background: rgba(239, 68, 68, 0.15);
+        border: 1px solid rgba(239, 68, 68, 0.3);
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 18px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.05rem;
+        color: #d1d5db;
+        line-height: 2;
+      }
+
+      .line {
+        width: 80px;
+        height: 4px;
+        margin: 30px auto 0;
+        border-radius: 20px;
+        background: linear-gradient(90deg, #ef4444, #f59e0b);
+      }
+
+      @media (max-width: 600px) {
+        .card {
+          padding: 40px 25px;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="icon">🔒</div>
+
+      <h1>محتوای این صفحه در دسترس نیست</h1>
+
+      <p>
+        این محتوا بنا به تصمیم مالک وب‌سایت و به منظور حفظ حقوق مادی و معنوی، در
+        حال حاضر برای عموم قابل مشاهده نیست. از همراهی و درک شما سپاسگزاریم.
+      </p>
+
+      <div class="line"></div>
+    </div>
+  </body>
+</html>
